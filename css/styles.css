@@ -1,0 +1,554 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*? colors */
+/* 
+#BB275B  
+#2E367E  
+#ED881E 
+#121212 black
+#464646 gray
+#cccccc lightgray
+#ffffff white
+ */
+
+
+/*? body */
+/* 
+/**font-family Myriad Pro
+/** background gradient #ffffff #E9F4FF
+*/
+
+body {
+    font-family: Arial;
+    background-image: linear-gradient(#ffffff, #E9F4FF);
+}
+
+.title {
+    text-align: center;
+    color: #2E367E;
+    font-weight: bold;
+    padding: 32px 0;
+}
+
+
+/*? titles */
+/* 
+/** font size 45 px
+/** color #2E367E
+*/
+
+
+/*? header */
+/* 
+/** height 112 px
+/** padding 0 80 px
+logo /** size 112 px * 112 px
+nav links /** padding 10 px
+nav links /** width 1088
+nav buttons /** padding 10 px
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+
+}
+
+.nav-links ul {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-links ul a {
+    text-decoration: none;
+    color: #121212;
+    text-transform: capitalize;
+
+}
+
+.nav-links ul a.active {
+
+    color: #BB275B;
+
+}
+
+.nav-btn button {
+    border: 0;
+    background-color: white;
+    font-size: 20px;
+}
+
+/*? hero section */
+/* 
+title /** font size 64px
+description /** size 24px
+logo /** size 486.02 px * 345.85 px
+cards /** size 260 px * 200 px
+cards /** padding 16 px
+card icons /** size 44 px * 44 px
+*/
+
+/* dfvdfgsdg */
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 200px;
+    align-items: center;
+
+}
+
+.hero-first {
+    width: 50%;
+    gap: 30px;
+    display: grid;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    color: gray;
+
+}
+
+.nour {
+    color: #2E367E;
+}
+
+.syria {
+    color: #BB275B;
+}
+
+
+.card-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 260px;
+    height: 200px;
+    background-color: #fafafa;
+    border-radius: 16px;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card h3 {
+    color: #2E367E;
+}
+
+/*? programs section */
+/* 
+/** y gap 68
+/** x gap 24
+card /** padding 0 20 px
+card /** size 300 px * 220 px
+card /** icons container size 100 px * 100 px
+card /** icons size 55 * 55
+card /** icons padding 20 px
+card /** border radius 22 px
+*/
+
+.programs-sec {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.pro-card-item {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    align-items: center;
+    width: 300px;
+    height: 220px;
+    background-color: #fafafa;
+    padding: 0 30px;
+    border-radius: 16px;
+    color: #464646;
+}
+
+.pro-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 68px;
+    row-gap: 24px;
+}
+
+/*? current campaigns section */
+/* 
+/** border radius 20p px
+image /** size 1534 px * 460 px
+*/
+
+.campaign-img {
+    padding: 0 120px;
+
+}
+
+
+
+
+/*? events section */
+/* 
+card image /** size 435 * 285
+card image /** border radius 15 px
+card date /** font size 18 px
+card description /** font size 24 px
+card button /** border radius 10 px
+card button /** font size 20 px
+*/
+
+.date {
+    font-size: 16px;
+    color: #ED881E;
+}
+
+.eventCard {
+    /* width: 435px; */
+    display: grid;
+    gap: 20px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.eventText {
+    font-size: 20px;
+}
+
+.eventBtn {
+    border: 0;
+    border-radius: 10px;
+    padding: 16px 0;
+    background-color: #2E367E;
+    color: white;
+    font-size: 16px;
+}
+
+.eventContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 120px;
+}
+
+
+
+/*? locations */
+/*
+/** font size 20 px
+icons /** size 24 px * 24 px
+/** padding 20px 
+
+grid-column: span 1 / span 1;
+
+*/
+
+/* .table{
+    background-color: #BB275B;
+} */
+.table {
+    border: 2px solid #fafafa;
+    border-radius: 24px;
+    background-color: #F1F6FC;
+    height: min-content;
+    padding: 8px;
+    font-size: 14px;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.centers {
+    padding: 50px 160px;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+
+.map {
+    grid-column: 2 span;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.t-value {
+    grid-column: 2 span;
+
+}
+
+.t-key {
+    display: flex;
+    gap: 16px;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 16px 8px;
+}
+
+
+.first-table-cell {
+    display: flex;
+    gap: 4px;
+    width: 120px;
+    position: relative;
+}
+
+.first-table-cell p {
+    color: #ED881E;
+    transform: translateY(4px);
+    text-wrap: nowrap;
+    /* width: max-content; */
+}
+
+.first-table-cell svg {
+    min-width: 25px;
+}
+
+.first-table-cell img {
+    align-self: flex-start;
+    min-width: 25px;
+}
+
+
+.second-table-cell {
+    grid-column: 2 span;
+}
+
+
+
+/*? success stories */
+/* 
+/** image size 370 px * 245 px
+/** border radius 12 px
+/** font size 16
+/** gap 24
+card /** padding 18 px
+card /** gap 18 px
+*/
+
+.storyCard{
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 18px;
+}
+.story-card1{
+    border: 1px solid white;
+    border-radius: 16px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px ;
+    width:350px;
+    text-align: center;
+    font-size: 14px;
+}
+.story-card1 img{
+    /* width: 330px; */
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*? latest news */
+/* 
+/** padding 20px 40px
+/** gap 40px
+title /** font size 20 px
+date /** font size 16 px
+description /** font size 18 px
+main card /** border radius 22 px
+main card /** border radius image 13.75 px
+main card /** padding 20 px
+main card /** gap 16 px
+/*todo justify content space evenly
+secondary card /** padding 16 px
+secondary card /** gap 16 px
+secondary card image /** size 107.49 px * 92.87 px
+secondary card /** border radius 20 px
+secondary card /** border radius image 12 px
+*/
+
+
+
+.newsSection{
+    padding:15px 100px;
+    
+}
+.newsContant{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    border: 4px solid white;
+    padding:20px 40px;
+    border-radius: 20px;
+    background-color: #F1F6FC;
+}
+.newsCard-1{
+    padding: 16px;
+    border: 4px solid white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.newsTitle{
+    font-size: 16px;
+}
+.newsCard{
+    display: grid;
+    gap: 16px;
+}
+.newsCard-item{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border: 3px solid #fff;
+    border-radius: 16px;
+}
+
+.newsCard-item p {
+    font-size: 18px;
+}
+
+.newsCard button {
+    background-color: none;
+    border: 3px solid #fff;
+    border-radius: 16px;
+    padding: 10px 0;
+}
+/*? footer */
+
+/* 
+/** padding  40 px 200 px
+logo /** size 152.35 px * 152.35 px
+logo /** padding 10px
+links /** gap 22
+links /** font size 16px
+label /** font size 18 px bold
+placeholder /** font size 14 px
+button /** font size 16 px
+form description /** font size 14 px
+copy rights /** font size 16 px
+social media logos /** gap 18 px
+social media logos /** size 32 px * 32 px
+*/
+
+.foter{
+    padding:20px 100px;
+    background-color: #ffffff;
+    
+
+}
+.content-f{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.logo ul a{
+text-decoration: none;
+color: #000;
+
+}
+
+.logo ul {
+    display: flex;
+    gap: 10px;
+
+    }
+    form{
+        display: grid;
+        gap: 8px;
+    }
+    .form label{
+        color: #2E367E;
+        font-weight: bold;
+    }
+    .inp-but button{
+        background-color: #2E367E;
+        border-radius: 5px;
+        color: #fafafa;
+        padding:8px 16px;
+    }
+    .inp-but input{
+        background-color: #F1F6FC;
+        border-radius: 5px;
+        padding:8px 16px;
+        border: none;
+    }
+
+
+    form p{
+        color: #666;
+    }
+
+    .tail{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .footerHr{
+        border: 1px solid #464646;
+        margin: 20px 0;
+    }
+
+
+
+
+    summary, .map svg path{
+        cursor: pointer;
+        transition-duration: 100ms;
+    }
+
+
+    .fills:hover {
+        fill: #2E367E;
+    }
+
+    .fills:active{
+        fill:#BB275B;
+    }
+
+
+    @media screen and (max-width: 786px) {
+        .hero {
+          display: grid;
+        }
+      }
